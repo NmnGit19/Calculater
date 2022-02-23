@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculater</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                Calculator
+            </a>
+        </div>
+    </nav>
+    <h1 id="heading_1">Calculate Karo</h1>
+    <select id="selectType">
+        <option value="Sum" onclick="addition();">Sum</option>
+        <option value="Multi">Multiply</option>
+        <option value="Minus">Minus</option>
+        <option value="Divide">Divide</option>
+    </select></br>
+    <form id="container" onsubmit="calculate(); return false">
+        <label id="label_1">Please enter value you like to calculate</label></br>
+        <input type="number" class="value" id="val1" placeholder="Enter First Val">
+        <input type="number" class="value" id="val2" placeholder="Enter Second Val">
+        <h1>=</h1>
+        <input type="submit" id="submitBtn"></br>
+        <span id="resultContainer"></span>
+    </form>
+
+    <div id="footer">
+        <h2>© 2021-2022 Calculatekaro.com</h2>
+    </div>
+</body>
+
+</html>
